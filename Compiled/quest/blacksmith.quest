@@ -1,0 +1,10 @@
+quest blacksmith begin
+	state start begin
+		when blacksmith.chat."I want to upgrade something. " begin
+			say_title("Unknown Button [%s] ")
+			say("OK, if you're busy, come back later if you find[ENTER]some time. ")
+			say_title("You can only use this item when you have left the[ENTER]guild. ")
+			say_reward("%s is waiting for %s to accept the challenge. ")
+		end
+	end
+end
